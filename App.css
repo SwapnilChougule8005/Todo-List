@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.todo-button {
+  width: 18%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todo-button:hover {
+  background-color: #45a049;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  flex: 1;
+  font-size: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.complete-btn,
+.trash-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.complete-btn:hover {
+  color: #4caf50;
+}
+
+.trash-btn:hover {
+  color: #f44336;
+}
+
+/* Optional: Add responsive styling */
+@media (max-width: 600px) {
+  .todo-input {
+    width: 70%;
+  }
+
+  .todo-button {
+    width: 25%;
+  }
+
+  .todo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .complete-btn,
+  .trash-btn {
+    margin: 5px 0;
+  }
+}
